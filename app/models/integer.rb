@@ -1,4 +1,4 @@
-class Converter
+class Integer
   def self.int_to_string( int )
     raise Converter::NUMBER_INVALID_EXCEPTION if int.blank?
 
@@ -26,7 +26,8 @@ class Converter
 
   end
 
-  #considered using I18n for this
+  private
+
   def self.humanize_hash
     {
       "1" => "one",
@@ -61,4 +62,3 @@ class Converter
 
   class NUMBER_INVALID_EXCEPTION < Exception; end
 end
-
