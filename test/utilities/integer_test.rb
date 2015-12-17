@@ -1,5 +1,4 @@
 require 'test_helper'
-require_relative '../../app/models/integer'
 
 class IntegerTest < ActiveSupport::TestCase
   test 'it should convert 1 to one' do
